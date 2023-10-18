@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filter{
+  width: 44px;
+  height: 34px;
+  margin-left: -4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-property: filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  color: #fff;
+  filter: brightness(0.5) saturate(0);
+}
+
+.filter-selected{
+  filter: brightness(1) saturate(1);
+}
